@@ -30,3 +30,15 @@ def get_track_metadata(api_token, cm_track_id):
     else:
         pass
     return track
+
+def get_chart_data(api_token, cm_track_id, chart_type, date):
+    #refer to https://api.chartmetric.com/apidoc/#api-Track-getTrackCharts for allowed values for chart_type
+    #date == YYYY-MM-DD
+    #returns a list of dictionaries with chart data for each date
+    response = requests.get(url='https://api.chartmetric.com/api/track/{}/{}/charts'.format(cm_track_id, chart_type),
+                            headers={'Authorization' : 'Bearer {}'.format(api_token)}, params={'since': date}
+                                )
+    if response.status_code == 200:
+        data = response.json()
+        chart = data['obj']
+        return chart['data']
