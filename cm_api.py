@@ -42,3 +42,17 @@ def get_chart_data(api_token, cm_track_id, chart_type, date):
         data = response.json()
         chart = data['obj']
         return chart['data']
+
+def get_tiktok_chart_data(api_token, chart_type, date, interval):
+    #for apitoken import get_import_token
+    #for chart_type, accepted values include 'tracks', 'videos', 'users'
+    #date == YYYY-MM-DD
+    #for interval, accepted values include 'daily', 'weekly'
+    #returns a list of song metadata
+    response = requests.get(url='https://api.chartmetric.com/api/charts/tiktok/{}'.format(chart_type),
+                            headers={'Authorization' : 'Bearer {}'.format(api_token)}, params={'date': date, 'interval': interval}
+                                )
+    if response.status_code == 200:
+        data = response.json()
+        chart = data['obj']
+        return chart['data']
