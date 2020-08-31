@@ -1,5 +1,6 @@
 
 import requests
+import re
 
 
 REFRESH_TOKEN = 'ZT9RCsKBcwHaLCPulKmDFXWPxpwfoYtAdYunn5qgeVWnpzYBEkw5qXzFraNgPIAS'
@@ -56,3 +57,20 @@ def get_tiktok_chart_data(api_token, chart_type, date, interval):
         data = response.json()
         chart = data['obj']
         return chart['data']
+
+def get_artist_id(api_token, q, search_type):
+    #return tuple (artist name, artist cm id)
+    response = requests.get(url='https://api.chartmetric.com/api/search',
+                            headers={'Authorization' : 'Bearer {}'.format(api_token)}, params={'q': q, 'type': search_type}
+                                )
+    if response.status_code == 200:
+        data = response.json()
+        if data['obj'] == 'None':
+            return None
+        chart = data['obj']
+        
+        if chart['artists'][0]['name'].lower() == q.lower():
+            return chart['artists'][0]['id']
+    else:
+        print(response.status_code)
+        print(response.text)
