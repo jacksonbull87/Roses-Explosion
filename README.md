@@ -16,7 +16,7 @@ to analyze the impact that the viral, hit-making app has on an artist's social m
 
 Now in order to answer this question, I need data (duh!). With the help of ChartMetric's API, 
 I was able to gather data on the top 100 weekly tracks on TikTok from May 2nd to August 15th.
-Using `from cm_api import get_api_token, get_tiktok_chart_data` was able to fetch chart positions
-from the past 4 months.
+Using `from cm_api import get_api_token, get_tiktok_chart_data` I was able to fetch chart positions
+from the past 4 months, which included 1500 chart positions, 375 unique tracks, 351 unique artists.
 
 ![](/images/numberofsongsartists.png)
