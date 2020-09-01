@@ -19,4 +19,4 @@ I was able to gather data on the top 100 weekly tracks on TikTok from May 2nd to
 
 ![](images/tiktokweeklycharts.jpeg)
 
-![](images/number of songs_artists.jpeg)
+![](images/numberofsongsartists.jpeg)
