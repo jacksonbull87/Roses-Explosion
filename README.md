@@ -11,3 +11,14 @@ to analyze the impact that the viral, hit-making app has on an artist's social m
 <p align="center">
 <img src="https://media.giphy.com/media/xUPN3lFweTO9jnXgCk/source.gif" alt="Sublime's custom image"/>
 </p>
+
+## Data Collection
+
+Now in order to answer this question, I need data (duh!). With the help of ChartMetric's API, 
+I was able to gather data on the top 100 weekly tracks on TikTok from May 2nd to August 15th.
+<p align="center">
+<img src="/images/tiktokweeklycharts">
+</p>
+<p align="left">
+<img src="/images/number of songs_artists">
+</p>
