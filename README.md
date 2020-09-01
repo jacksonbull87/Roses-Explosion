@@ -17,6 +17,6 @@ to analyze the impact that the viral, hit-making app has on an artist's social m
 Now in order to answer this question, I need data (duh!). With the help of ChartMetric's API, 
 I was able to gather data on the top 100 weekly tracks on TikTok from May 2nd to August 15th.
 
-![](/images/tiktokweeklycharts.jpeg)
+![](/images/tiktokweeklycharts.png)
 
-![](/images/numberofsongsartists.jpeg)
+![](/images/numberofsongsartists.png)
