@@ -1,4 +1,7 @@
-# Roses-Explosion
+# How Does TikTok Affect Social Media Growth In Emerging Artists?
+<p align="center">
+<img src="https://media.giphy.com/media/l1J3orPHZBfwTIOZy/source.gif">
+</p>
 
 ## Introduction
 
