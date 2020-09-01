@@ -5,8 +5,6 @@ import re
 
 REFRESH_TOKEN = 'ZT9RCsKBcwHaLCPulKmDFXWPxpwfoYtAdYunn5qgeVWnpzYBEkw5qXzFraNgPIAS'
 
-# data = {'refreshtoken' : REFRESH_TOKEN}
-# json = {'Content-Type' : 'application/json'}
 
 def get_api_token(REFRESH_TOKEN):
     api_url = 'https://api.chartmetric.com/api/token'
@@ -65,12 +63,19 @@ def get_artist_id(api_token, q, search_type):
                                 )
     if response.status_code == 200:
         data = response.json()
-        if data['obj'] == 'None':
-            return None
-        chart = data['obj']
-        
-        if chart['artists'][0]['name'].lower() == q.lower():
-            return chart['artists'][0]['id']
+        cm_id = []
+        try:
+            chart = data['obj']
+            for artist in chart['artists']:
+                if re.fullmatch(q.lower(), artist['name'].lower()):
+                    # print(artist['name'])
+                    # print('Chartmetric ID: ',artist['id'])
+                    return artist['id']
+                else:
+                    continue
+            
+        except TypeError:
+            return "None"
     else:
         print(response.status_code)
         print(response.text)
