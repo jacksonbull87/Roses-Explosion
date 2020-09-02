@@ -75,3 +75,20 @@ def get_artist_id(api_token, q, search_type):
     else:
         print(response.status_code)
         print(response.text)
+
+def get_fan_metrics(api_token, cm_artist_id, source, since_date, field):
+    #returns a list of dictionaries, each item being a different timestamp
+    response = requests.get(url='https://api.chartmetric.com/api/artist/{}/stat/{}'.format(cm_artist_id, source),
+                            headers={'Authorization' : 'Bearer {}'.format(api_token)}, params={'since': since_date, 'field': field}
+                                )
+    if response.status_code == 200:
+        data = response.json()
+        try:
+            chart = data['obj']
+            return chart
+            
+        except TypeError:
+            return "None"
+    else:
+        print(response.status_code)
+        print(response.text)
