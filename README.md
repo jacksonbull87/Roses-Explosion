@@ -26,6 +26,8 @@ Now that I have a `refresh_token`, I can use the following helper functions:
     - Parameters: `refresh_token`
 
 2. Get TikTok chart data `from cm_api import get_tiktok_chart_data`
+    - Parameters: api_token, chart_type, date, interval
+        - For information ofn types of values accepted, see [ChartMetric's Api Documentation](https://api.chartmetric.com/apidoc/#api-Charts-GetTiktokTracksChart)
 
 I was able to fetch chart positions from the past 4 months:
 - 1500 Chart Position
