@@ -16,13 +16,15 @@ to analyze the impact that the viral, hit-making app has on an artist's social m
 ### ChartMetric API
     With the help of ChartMetric's API, I was able to gather data on the top 100 weekly tracks on TikTok 
     from May 2nd to August 15th.
-    In order to make api calls to CM's server, I'll need an api token, which I can get by importing it from my config file: 
-`from cm_api import token`
-For security purposes, I locked away the refresh token in a config file (on gitignore).
-`refresh_token = token['refresh_token'] ` 
-Now that I haven a `refresh_token`, I can use the following helper functions to 
-    1) Get my temporary api_token `from cm_api import get_api_token`,
-    2) Get TikTok chart data `from cm_api import get_tiktok_chart_data`
-I was able to fetch chart positions from the past 4 months, 
-which included 1500 chart positions, 375 unique tracks, 351 unique artists.
+    In order to make api calls to CM's server, I'll need an api token 
+    which I can get by importing it from my config file: 
+        `from cm_api import token`
+    For security purposes, I locked away the refresh token in a config file (on gitignore).
+        `refresh_token = token['refresh_token'] ` 
+    Now that I haven a `refresh_token`, I can use the following helper functions to
+    <ol>
+    <li>Get my temporary api_token `from cm_api import get_api_token`</li>
+    <li>Get TikTok chart data `from cm_api import get_tiktok_chart_data`</li>
+    I was able to fetch chart positions from the past 4 months, 
+    which included 1500 chart positions, 375 unique tracks, 351 unique artists.
 ![](/images/numberofsongsartists.png)
