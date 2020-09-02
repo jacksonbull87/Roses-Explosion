@@ -3,9 +3,6 @@ import requests
 import re
 
 
-REFRESH_TOKEN = 'ZT9RCsKBcwHaLCPulKmDFXWPxpwfoYtAdYunn5qgeVWnpzYBEkw5qXzFraNgPIAS'
-
-
 def get_api_token(REFRESH_TOKEN):
     api_url = 'https://api.chartmetric.com/api/token'
     
@@ -63,7 +60,6 @@ def get_artist_id(api_token, q, search_type):
                                 )
     if response.status_code == 200:
         data = response.json()
-        cm_id = []
         try:
             chart = data['obj']
             for artist in chart['artists']:
