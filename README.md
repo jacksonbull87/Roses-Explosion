@@ -20,10 +20,12 @@ In order to make api calls to CM's server, I'll need an api token
 which I can get by importing it from my config file: 
         `from cm_api import token`.
 For security purposes, I locked away the refresh token in a config file (on gitignore).
-        `refresh_token = token['refresh_token'] ` 
+        `refresh_token = token['refresh_token'] `-
 Now that I have a `refresh_token`, I can use the following helper functions:
-1. Get my temporary api_token `from cm_api import get_api_token`</li>
-2. Get TikTok chart data `from cm_api import get_tiktok_chart_data`</li>
+1. Get my temporary api_token `from cm_api import get_api_token`
+    - Parameters: `refresh_token`
+
+2. Get TikTok chart data `from cm_api import get_tiktok_chart_data`
 
 I was able to fetch chart positions from the past 4 months:
 - 1500 Chart Position
