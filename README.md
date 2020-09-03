@@ -38,7 +38,7 @@ I was able to fetch chart positions from the past 4 months:
 [Data Located Here](https://github.com/jacksonbull87/Roses-Explosion/tree/master/datasets)
 ### ChartMetric API - Spotify Popularity Metrics
 `from cm_api import get_fan_metrics`
-- Parameters: `api_token`, CM Artist ID, Data Source, Beginning Date, Specific Stat
+- Parameters: `api_token`, cm_artist_id, data_source, begin_date, stat_metric
     - For information on value types accepted, see [ChartMetric's Api Documentation](https://api.chartmetric.com/apidoc/#api-Artist-GetArtistorStat)
 
 [Data Located Here](https://github.com/jacksonbull87/Roses-Explosion/tree/master/datasets)
