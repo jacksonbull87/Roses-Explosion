@@ -13,7 +13,7 @@ to analyze the impact that the viral, hit-making app has on an artist's social m
 </p>
 
 ## Data Collection
-### ChartMetric API
+### ChartMetric API - TikTok Weekly Chart Data
 With the help of ChartMetric's API, I was able to gather data on the top 100 weekly tracks on TikTok 
 from May 2nd to August 15th.
 In order to make api calls to CM's server, I'll need an api token 
