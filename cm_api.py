@@ -90,5 +90,6 @@ def get_fan_metrics(api_token, cm_artist_id, source, since_date, field):
         except TypeError:
             return "None"
     else:
+        print(cm_artist_id)
         print(response.status_code)
         print(response.text)
