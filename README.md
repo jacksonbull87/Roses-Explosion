@@ -27,10 +27,17 @@ Now that I have a `refresh_token`, I can use the following helper functions:
 
 2. Get TikTok chart data `from cm_api import get_tiktok_chart_data`
     - Parameters: api_token, chart_type, date, interval
-        - For information ofn types of values accepted, see [ChartMetric's Api Documentation](https://api.chartmetric.com/apidoc/#api-Charts-GetTiktokTracksChart)
+        - For information on value types accepted, see [ChartMetric's Api Documentation](https://api.chartmetric.com/apidoc/#api-Charts-GetTiktokTracksChart)
 
 I was able to fetch chart positions from the past 4 months:
 - 1500 Chart Position
 - 375 Unique Tracks
 - 351 Unique Artists
 ![](/images/numberofsongsartists.png)
+[Data Located Here](https://github.com/jacksonbull87/Roses-Explosion/tree/master/datasets)
+### ChartMetric API - Spotify Popularity Metrics
+`from cm_api import get_fan_metrics`
+- Parameters: `api_token`, CM Artist ID, Data Source, Beginning Date, Specific Stat
+    - For information on value types accepted, see [ChartMetric's Api Documentation](https://api.chartmetric.com/apidoc/#api-Artist-GetArtistorStat)
+[Data Located Here](https://github.com/jacksonbull87/Roses-Explosion/tree/master/datasets)
+
