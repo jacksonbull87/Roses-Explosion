@@ -41,7 +41,9 @@ So using my api function `from cm_api import get_track_meta`, I grabbed the tags
 Then using a dictionary object, I mapped each genre to its `cm_id`, engineering a new feature called `track_genre`.
 Features included in the dataset
 
-track_name | artist_name | cm_id|label | release_date | rank | weekly_posts | add_date | velocity | pre_rank | peak_rank | peak_date | time_on_chart | rank_week_start | weekly_posts_start | week_start_date | rank_week_end | weekly_posts_end | week_end_date | track_genre
+track_name | artist_name | cm_id| label | release_date | rank | add_date | velocity | peak_rank | peak_date | time_on_chart | track_genre
+-----------|-------------|------|-------|--------------|------|----------|----------|-----------|-----------|---------------|------------
+
 
 
 
