@@ -14,6 +14,12 @@ popular songs as defined by the following KPIs:
 - Longevity (Time Spent on Chart)
 - Velocity (Biggest Change in Rank Over a 7-Day Period)
 - Most Time Spend at #1
+## Technology
+**Data Source:** [ChartMetric](https://api.chartmetric.com/apidoc/)
+**Date Range:** 05/25/20-08/15/20
+**Language:** Python
+**Visualization:** [Tableau](https://public.tableau.com/views/MostPopularTikTokSongsSummer2020/MostViral?:language=en&:display_count=y&:origin=viz_share_link)
+
 
 <p align="center">
 <img src="https://media.giphy.com/media/1uBL7nzh9mxXO/source.gif" alt="Sublime's custom image"/>
