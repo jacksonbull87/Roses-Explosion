@@ -1,13 +1,20 @@
-# How Does TikTok Affect Social Media Growth In Emerging Artists?
+# Sounds of Summer 2020
+## An Analytical Approach to Finding The Song of the Summer
 <p align="center">
-<img src="https://media.giphy.com/media/l1J3orPHZBfwTIOZy/source.gif">
+<img src="https://media.giphy.com/media/TKqXCyRwqf0DC/source.gif">
 </p>
 
 ## Introduction
 
-Despite privacy and national security concerns that have been in the headlnes lately, TikTok
-has been a significant driving force behind many emerging artists. The purpose of this project is
-to analyze the impact that the viral, hit-making app has on an artist's social media following.
+Summer is typically an exciting time for music fans; as the days get longer and the temperature 
+starts to heat up, positive and lively new music releases provide the perfect soundtrack 
+to BBQs, trips to the beach, roadtrips, blockparties, and other forms of real life escapism.
+Using data from TikTok's weekly music charts, the goal of this project is to examine the most
+popular songs  as defined by the following KPIs:
+- Longevity (Time Spent on Chart)
+- Velocity (Biggest Change in Rank Over a 7-Day Period)
+- Most Time Spend at #1
+
 <p align="center">
 <img src="https://media.giphy.com/media/xUPN3lFweTO9jnXgCk/source.gif" alt="Sublime's custom image"/>
 </p>
