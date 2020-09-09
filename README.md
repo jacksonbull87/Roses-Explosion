@@ -17,6 +17,7 @@ popular songs as defined by the following KPIs:
 <p align="center">
 <img src="https://media.giphy.com/media/1uBL7nzh9mxXO/source.gif" alt="Sublime's custom image"/>
 </p>
+
 ## Technology
 **Data Source:** [ChartMetric](https://api.chartmetric.com/apidoc/)
 **Date Range:** 05/25/20-08/15/20
