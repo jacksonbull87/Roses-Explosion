@@ -20,8 +20,11 @@ popular songs as defined by the following KPIs:
 
 ## Technology
 **Data Source:** [ChartMetric](https://api.chartmetric.com/apidoc/)
+
 **Date Range:** 05/25/20-08/15/20
+
 **Language:** Python
+
 **Visualization:** [Tableau](https://public.tableau.com/views/MostPopularTikTokSongsSummer2020/MostViral?:language=en&:display_count=y&:origin=viz_share_link)
 
 
