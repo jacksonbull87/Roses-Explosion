@@ -39,7 +39,10 @@ Now that I have a `refresh_token`, I can use the following helper functions:
 In addition to my primary goals of this project, I also want to analyize the popularity of genres. 
 So using my api function `from cm_api import get_track_meta`, I grabbed the tags associated with each `cm_id`. 
 Then using a dictionary object, I mapped each genre to its `cm_id`, engineering a new feature called `track_genre`.
-Features included in the dataset
+
+**Dataset Features**
+*Note: The features listed below does not represent all features in my master dataframe-these are just
+the ones I ended up using for my analysis*
 
 track_name | artist_name | cm_id| label | release_date | rank | add_date | velocity | peak_rank | peak_date | time_on_chart | track_genre
 -----------|-------------|------|-------|--------------|------|----------|----------|-----------|-----------|---------------|------------
