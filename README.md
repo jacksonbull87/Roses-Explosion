@@ -44,8 +44,8 @@ Then using a dictionary object, I mapped each genre to its `cm_id`, engineering 
 *Note: The features listed below does not represent all features in my master dataframe-these are just
 the ones I ended up using for my analysis*
 
-track_name | artist_name | cm_id| label | release_date | rank | add_date | velocity | peak_rank | peak_date | time_on_chart | track_genre
------------|-------------|------|-------|--------------|------|----------|----------|-----------|-----------|---------------|------------
+track_name | artist_name | cm_id| label | release_date | rank | add_date | velocity | peak_rank | peak_date | time_on_chart | track_genre|year
+-----------|-------------|------|-------|--------------|------|----------|----------|-----------|-----------|---------------|------------|----
 
 
 
