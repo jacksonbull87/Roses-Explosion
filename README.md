@@ -49,9 +49,11 @@ Now that I have a `refresh_token`, I can use the following helper functions:
 In addition to my primary goals of this project, I also want to analyize the distribution of tracks in terms
 of genre and era. So using my api function `from cm_api import get_track_meta`, I grabbed the tags associated with each `cm_id`. 
 Then using a dictionary object, I mapped each genre to its `cm_id`, engineering a new feature:
-`track_genre`
+
+`ttwk_mstr['track_genre'] = ttwk_mstr['cm_id'].map(track_genre)`
 
 Using one of Pandas' built-in datetime methods, I engineered a new feature:
+
 `ttwk_mstr['era'] = ttwk_mstr['release_date'].dt.year`
 
 **Dataset Features**
