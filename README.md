@@ -46,9 +46,10 @@ Now that I have a `refresh_token`, I can use the following helper functions:
     - Parameters: api_token, chart_type, date, interval
         - For information on value types accepted, see [ChartMetric's Api Documentation](https://api.chartmetric.com/apidoc/#api-Charts-GetTiktokTracksChart)
 ### Feature Engineering
-In addition to my primary goals of this project, I also want to analyize the popularity of genres. 
-So using my api function `from cm_api import get_track_meta`, I grabbed the tags associated with each `cm_id`. 
+In addition to my primary goals of this project, I also want to analyize the distribution of tracks in terms
+of genre and era. So using my api function `from cm_api import get_track_meta`, I grabbed the tags associated with each `cm_id`. 
 Then using a dictionary object, I mapped each genre to its `cm_id`, engineering a new feature called `track_genre`.
+Using one of Pandas' built-in datetime methods, I engineered a new feature, `ttwk_mstr['era'] = ttwk_mstr['release_date'].dt.year`
 
 **Dataset Features**
 *Note: The features listed below does not represent all features in my master dataframe-these are just
