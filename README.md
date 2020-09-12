@@ -45,16 +45,19 @@ Now that I have a `refresh_token`, I can use the following helper functions:
 2. Get TikTok chart data `from cm_api import get_tiktok_chart_data`
     - Parameters: api_token, chart_type, date, interval
         - For information on value types accepted, see [ChartMetric's Api Documentation](https://api.chartmetric.com/apidoc/#api-Charts-GetTiktokTracksChart)
-### Feature Engineering
+
+Once I extracted all the charts, I concatened each dataframe along axis 0 to create one master dataframe:
+    `master_df.to_csv('datasets/historic_ttwk.csv')`
+Each row represents a chart position for a specific week, so there may be duplicate artists is an artists spend more than 
+a week onthe charts.
+
+#### Feature Engineering
 In addition to my primary goals of this project, I also want to analyize the distribution of tracks in terms
 of genre and era. So using my api function `from cm_api import get_track_meta`, I grabbed the tags associated with each `cm_id`. 
 Then using a dictionary object, I mapped each genre to its `cm_id`, engineering a new feature:
 
 `ttwk_mstr['track_genre'] = ttwk_mstr['cm_id'].map(track_genre)`
 
-Using one of Pandas' built-in datetime methods, I engineered a new feature:
-
-`ttwk_mstr['era'] = ttwk_mstr['release_date'].dt.year`
 
 **Dataset Features**
 *Note: The features listed below does not represent all features in my master dataframe-these are just
@@ -62,6 +65,19 @@ the ones I ended up using for my analysis*
 
 track_name | artist_name | cm_id| label | release_date | rank | add_date | velocity | peak_rank | peak_date | time_on_chart | track_genre|year
 -----------|-------------|------|-------|--------------|------|----------|----------|-----------|-----------|---------------|------------|----
+
+
+### ChartMetric API - Spotify Popularity Data For Artists
+In order to show historic trends in popularity score for our TikTok artists, I created another
+API helper function to retreive data over the past 12 months, `since_date = 2019-09-02`, but only
+for artists who had a peak rank between 1 and 10.
+    `from cm_api import get_fan_metrics`
+
+
+Using one of Pandas' built-in datetime methods, I engineered a new feature:
+
+`ttwk_mstr['era'] = ttwk_mstr['release_date'].dt.year`
+
 
 
 
