@@ -97,7 +97,9 @@ timestamp | artist | cm_artist_id| popularity
 ## Visualizations - Key Performance Metrics
 ### Longevity (Time On Chart)
 The visualization below reveals the top trending TikTok tracks sorted in descending order of time most spent
+
 ![](/images/time_spent.png)
+[Link To Interactive Vizualization](https://public.tableau.com/views/MostPopularTikTokSongsSummer2020/TimeOnChartTop10?:language=en&:display_count=y&:origin=viz_share_link)
 
 
             
