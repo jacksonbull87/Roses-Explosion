@@ -46,7 +46,7 @@ Now that I have a `refresh_token`, I can use the following helper functions:
     - Parameters: api_token, chart_type, date, interval
         - For information on value types accepted, see [ChartMetric's Api Documentation](https://api.chartmetric.com/apidoc/#api-Charts-GetTiktokTracksChart)
 
-Once I extracted all the charts, I concatened each dataframe along axis 0 to create one master dataframe:
+Once I extracted all the charts, I concatenated each dataframe along axis 0 to create one master dataframe:
     `master_df.to_csv('datasets/historic_ttwk.csv')`
 Each row represents a chart position for a specific week, so there may be duplicate artists is an artists spend more than 
 a week onthe charts.
